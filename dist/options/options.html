@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <title>Options</title>
+    <script src="options.js" defer></script>
+</head>
+<body>
+    
+    <h1 id="title"> <span>YouTube</span> focus helper config</h1>
+    <section class="configSection">
+
+        <h2 class="sectionTitle">Time</h2>
+
+        <div id="timeConfig">
+            <div>
+                <label for="timeLimit">Daily limit:</label>
+                <input id="timeLimit" type="text">
+                <button id="setLimit">set</button>
+            </div>
+
+            <p>Current limit: <span id="currentLimit"></span></p>
+            <p>Time left today: <span id="timeLeftCounter"></span></p>
+        </div>
+
+        <div class="fieldWrapper">
+            <label for="excludeNav">Exclude navigation</label>
+            <input id="excludeNav" type="checkbox">
+        </div>
+
+        <div class="fieldWrapper">
+            <label for="excludeShorts">Exclude shorts</label>
+            <input id="excludeShorts" type="checkbox">
+        </div>
+
+    </section>
+
+
+    <section class="configSection">
+
+        <h2 class="sectionTitle">Channels</h2>
+
+        <div class="subscriptionModeWrapper">
+            <label for="subscriptionMode">Subscription mode: </label>
+            <button id="subscriptionMode" class=""></button>
+            <p id="subModeDescription" class="modeDescription"></p>
+        </div>
+
+        <div class="fieldWrapper">
+            <label for="list">Enable channel list</label>
+            <input id="list" type="checkbox">
+        </div>
+
+        <div id="channelsWrapper">
+            <p>You can specify channels by typing the exact name of the channel, or by clicking the plugin icon while watching a video from the channel you want to add and choosing the "add *channel* to channels list" button</p>
+
+            <div class="fieldWrapper">
+                <input id="channelName" type="text">
+                <button id="addChannel">add</button>
+            </div>
+
+            <ul id="channelList"> </ul>
+
+            <div class="listModeWrapper">
+                <label for="listMode">List mode:</label>
+                <button id="listMode" class=""></button>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <section class="configSection">
+
+        <h2 class="sectionTitle">Schedule config</h2>
+
+        <div id="additionalConfigs">         
+            <div class="fieldWrapper">
+                <label for="enableSchedule">Enable schedule</label>
+                <input id="enableSchedule" type="checkbox">
+            </div>
+
+            <div class="fieldWrapper">
+                <label for="scheduleMode">Schedule mode:</label>
+                <button id="scheduleMode"></button>
+                <p id="schdlModeDescription" class="modeDescription"></p>
+            </div>
+        </div>
+
+        <div id="addPeriod">
+            <label for="weekDay">New period:</label>
+            <select name="weekDay" id="weekDay">
+                <option value="0">Sunday</option>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+            </select>
+
+            <div id="timeWrapper">
+                <span>from</span>
+                <input type="time" id="startTime" class="timeSelection">
+                <span>to</span>
+                <input type="time" id="endTime" class="timeSelection"> 
+            </div>
+            
+
+            <button id="addToSchedule">add to schedule</button>
+        </div>
+
+        <div id="scheduleConfigWrapper">
+            <div class="dayWrapper">
+                <h2 class="weekDayName">Sunday</h2>
+                <div id="sundaySchedule" class="hoursWrapper">
+
+                </div>
+            </div>
+
+            <div class="dayWrapper">
+                <h2 class="weekDayName">Monday</h2>
+                <div id="mondaySchedule" class="hoursWrapper">
+
+                </div>
+            </div>
+
+            <div class="dayWrapper">
+                <h2 class="weekDayName">Tuesday</h2>
+                <div id="tuesdaySchedule" class="hoursWrapper">
+                    
+                </div>
+            </div>
+
+            <div class="dayWrapper">
+                <h2 class="weekDayName">Wednesday</h2>
+                <div id="wednesdaySchedule" class="hoursWrapper">
+                    
+                </div>
+            </div>
+
+            <div class="dayWrapper">
+                <h2 class="weekDayName">Thursday</h2>
+                <div id="thursdaySchedule" class="hoursWrapper">
+                    
+                </div>
+            </div>
+
+            <div class="dayWrapper">
+                <h2 class="weekDayName">Friday</h2>
+                <div id="fridaySchedule" class="hoursWrapper">
+                    
+                </div>
+            </div>
+
+            <div class="dayWrapper">
+                <h2 class="weekDayName">Saturday</h2>
+                <div id="saturdaySchedule" class="hoursWrapper">
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

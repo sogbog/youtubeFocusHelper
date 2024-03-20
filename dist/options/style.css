@@ -1,0 +1,265 @@
+*{
+    border: 0;
+    margin: 0;
+    font-family: "Oxygen";
+    font-size: 16px;
+}
+
+body{
+    background-color: #FBFFEF;
+    padding: 50px 200px 50px 200px;
+}
+
+button, select{
+    cursor: pointer;
+}
+
+button:hover, select:hover{
+    filter: brightness(0.8);
+}
+
+/* ------------------------------------------------------------------------- */
+
+#title{
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+#title span{
+    font-size: 32px;
+    color: #FFF;
+    background-color: #F00;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+/* ------------------------------------- */
+
+.configSection{
+    padding: 10px 0 0 5px;
+    border-top: 1px solid #000;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sectionTitle{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* ------------------------------------- */
+
+#timeConfig{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#timeConfig #timeLimit{
+    width: 50px;
+    padding: 3px 5px;
+    background-color: #C6CABA;
+    border-radius: 5px;
+}
+
+#timeConfig label{
+    font-size: 16px;
+}
+
+#timeConfig button{
+    margin-left: 10px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #52d1d1;
+}
+
+#timeConfig p{
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+/* ------------------------------------- */
+
+#subscriptionMode{
+    border-radius: 5px;
+}
+
+.subscriptionModeWrapper .neutral{
+    background-color: #e9c653;
+}
+
+.subscriptionModeWrapper .blacklist{
+    background-color: #c50606;
+    color: white;
+}
+
+.subscriptionModeWrapper .whitelist{
+    background-color: #4cc506;
+}
+
+.modeDescription{
+    margin-top: 4px;
+    font-size: 14px;
+    color: #303030;
+}
+
+#channelsWrapper{
+    margin-top: 10px;
+}
+
+#channelsWrapper p{
+    margin-bottom: 10px;
+}
+
+#channelsWrapper #addChannel{
+    margin-left: 10px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #52d183;
+}
+
+#channelsWrapper #channelName{
+    padding: 3px 5px;
+    background-color: #C6CABA;
+    border-radius: 5px;
+}
+
+#channelsWrapper ul{
+    border: 1px solid #000;
+    border-radius: 10px;
+    max-width: 50%;
+    height: 185px;
+    overflow-y: auto;
+    padding: 10px 15px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#channelsWrapper li button{
+    margin-left: 5px;
+    background-color: #d15252;
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 2px 4px;
+}
+
+.listModeWrapper{
+    margin-top: 10px;
+}
+
+.listModeWrapper #listMode{
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.listModeWrapper .blacklist{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* ------------------------------------- */
+
+#additionalConfigs{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#scheduleMode{
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+#scheduleMode.blacklist{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#scheduleConfigWrapper{
+    display: flex;
+}
+
+#addPeriod{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#weekDay{
+    background-color: #FBFFEF;
+    border-radius: 5px;
+}
+
+#timeWrapper input:nth-child(2){
+    margin-right: 20px;
+}
+
+#addPeriod select{
+    padding: 2px 0 2px 2px;
+    background-color: #C6CABA;
+}
+
+.timeSelection{
+    border-radius: 5px;
+    background-color: #C6CABA;
+    width: 105px;
+    padding: 2px 0 2px 3px;
+}
+
+#timeWrapper span{
+    margin-right: 20px;
+}
+
+#addPeriod button{
+    margin-left: 10px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #52d183;
+}
+
+#scheduleConfigWrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.dayWrapper{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 4px 8px;
+    width: 140px;
+    height: 200px;
+}
+
+.weekDayName{
+    text-align: center;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.hoursWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 83%;
+}
+
+.hourRange{
+    display: flex;
+    align-items: center;
+}
+
+.hourRange button{
+    margin-left: 5px;
+    background-color: #d15252;
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 2px 4px;
+}

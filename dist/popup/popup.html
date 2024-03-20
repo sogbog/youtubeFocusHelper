@@ -1,0 +1,64 @@
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            padding: 5px;
+        }
+
+        #content{
+            background-color: #FBFFEF;
+        }
+
+        .disabled{
+            display: none;
+        }
+
+        #enabledInfo{
+            padding: 5px;
+        }
+
+        .counting{
+            background-color: #db924e;
+            color: black;
+        }
+
+        .stopped{
+            background-color: #72cf77;
+            color: black;
+        }
+
+        #timeInfo{
+            width: 150px;
+            padding: 5px;
+        }
+
+        #addButton{
+            width: max-content;
+            padding: 5px 8px;
+            margin-top: 15px;
+            background-color: #d8d8d8;
+            border-radius: 8px;
+            border: none;
+        }
+
+        #addButton:hover{
+            filter: brightness(0.85);
+        }
+    </style>
+</head>
+
+
+<div id="content">
+    <h3 id="enabledInfo" class="stopped">Not counting</h3>
+    <h3 id="timeInfo">Time Left: <span id="timer">loading...</span></h3>
+    
+    <div id="addChannel" class="">
+        <button id="addButton"></button>
+    </div>
+</div>
+
+<script src="popup.js"></script>
