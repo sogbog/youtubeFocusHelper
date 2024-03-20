@@ -16,6 +16,7 @@ Because this was my first time coding an extension, I wanted to try and use only
 Basically, you have a configurable daily limit of seconds that you can stay on youtube. You can configure a bunch of settings to tell the extension when to discount from your daily limit or not. Once the limit is reached, your youtube will be blocked for the day.
 
 For the user, there are 2 interactable parts to this extension, the first thing you would probably see when you install the extension is whats called the "popup". By default it stays hidden inside your extensions folder, but you can pin it in the extensions bar. When you click the icon(currently the default), a very small window will open and display if your time is ticking and your current time remaining. If you are watching a video, it will also have a button for adding the current channel to the channel list(covered in the options section). Like this:
+
 ![Popup](https://i.imgur.com/VnTAjWS.png)
 
 
